@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DailyActivites" verbose="2">
+
+	<listeners>
+		<listener class-name="Listeners.Listeners" />
+	</listeners>
+
+	<test name="Listenersexample">
+		<classes>
+			<class name="Listeners.LoginTest">
+				<Methods>
+					<include name="ByEmail" />
+					<include name="ByFacebook" />
+				</Methods>
+			</class>
+		</classes>
+	</test>
+</suite>
