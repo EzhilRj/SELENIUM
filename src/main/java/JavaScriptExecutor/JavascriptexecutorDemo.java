@@ -27,19 +27,16 @@ public class JavascriptexecutorDemo {
 		// js.executeScript(Script, args);
 
 		// flash
-		WebElement logo = driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[1]/a/img"));
-		JavascriptUtil.flash(logo, driver);
+		//WebElement logo = driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[1]/a/img"));
+		//JavascriptUtil.flash(logo, driver);
 
 		// Drawing border & take screenshot
-		/*
-		 * WebElement logo =
-		 * driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[1]/a/img"));
-		 * JavascriptUtil.drawborder(logo, driver);
-		 * 
-		 * TakesScreenshot ts = (TakesScreenshot)driver; File src=
-		 * ts.getScreenshotAs(OutputType.FILE); File trg = new File(".\\Logo.png");
-		 * FileUtils.copyFile(src, trg);
-		 */
+		WebElement logo = driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[1]/a/img"));
+		JavascriptUtil.drawborder(logo, driver);
+
+		TakesScreenshot ts = (TakesScreenshot)driver; File src=
+				ts.getScreenshotAs(OutputType.FILE); File trg = new File(".\\Logo.png");
+		FileUtils.copyFile(src, trg);
 
 		// Getting title of the page
 		// String title = JavascriptUtil.getTitleByJS(driver);
@@ -54,20 +51,20 @@ public class JavascriptexecutorDemo {
 
 		// Refreshing the page
 		//JavascriptUtil.refreshBrowserByJS(driver);
-		
+
 		// Scrolling down page
 		//JavascriptUtil.scrollPageDown(driver);
-		
+
 		//Thread.sleep(2000);
-		
+
 		// Scroll up page
 		//JavascriptUtil.scrollPageUp(driver);
-		
-		
+
+
 		// Zoom page
 		//JavascriptUtil.zoomPageByJS(driver);
-		
-		
+
+
 
 	}
 

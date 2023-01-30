@@ -20,6 +20,8 @@ public class MouseDragandDrop {
 		Actions act = new Actions(driver);
 		act.dragAndDrop(rome, italy).perform();// drag and drop
 
+
+
 	}
 
 }
