@@ -20,8 +20,6 @@ public class Fluentwait {
 
 	public static void main(String[] args) {
 
-
-
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
@@ -40,8 +38,11 @@ public class Fluentwait {
 		//Usage of Fluent Wait
 		WebElement element = mywait.until(new Function<WebDriver, WebElement>() {
 			  public WebElement apply(WebDriver driver) {
-			    return driver.findElement(By.xpath("//*[text()='Selenium']"));
-	 }
+
+				  return driver.findElement(By.xpath("//*[text()='Selenium']"));
+	    }
+
+
 		});
 		element.click();
 				

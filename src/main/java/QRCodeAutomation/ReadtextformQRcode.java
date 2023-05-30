@@ -29,8 +29,5 @@ public class ReadtextformQRcode {
         Result result = new MultiFormatReader().decode(binaryBitmap);
         System.out.println(result.getText());
 
-
-
-
     }
 }
